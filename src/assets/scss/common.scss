@@ -1,0 +1,126 @@
+@import '../scss/color.scss';
+
+
+// Widths.
+.min-width-80 {
+  min-width: 80px;
+}
+.min-width-137 {
+  min-width: 137px;
+}
+.width-250 {
+  width: 250px;
+}
+
+// Spacings.
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+// Z index.
+.z-index-1020 {
+  z-index: 1020;
+}
+.z-index-1040 {
+  z-index: 1040;
+}
+
+// Positions.
+.minus-left-20 {
+  left: -20px;
+}
+
+// Radius.
+.rounded-12 {
+  border-radius: 12px;
+}
+
+// Comman SCSS.
+.filter-shadow {
+  filter: drop-shadow(4px 3px 0px #000);
+}
+
+.shape-reverse {
+  &:after {
+    transform-origin: top right !important;
+    background: $White !important;
+  }
+}
+
+.shape-mirror {
+  &:after {
+    -ms-transform: skew(10deg, 0deg) !important;
+    -webkit-transform: skew(10deg, 0deg) !important;
+    transform: skew(10deg, 0deg) !important;
+  }
+}
+
+.shape {
+  &:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: $Deco;
+    transform-origin: bottom left;
+    -ms-transform: skew(-20deg, 0deg);
+    -webkit-transform: skew(-20deg, 0deg);
+    transform: skew(-20deg, 0deg);
+    border: 2px solid black;
+  }
+}
+
+// Member's card - shape color.
+.nick {
+  .shape {
+    &:after {
+      background: $Tuscany;
+    }
+  }
+}
+
+.craig {
+  .shape {
+    &:after {
+      background: $BurntSienna;
+    }
+  }
+}
+
+.geoff {
+  .shape {
+    &:after {
+      background: $SeaPink;
+    }
+  }
+}
+
+.brenton {
+  .shape {
+    &:after {
+      background: $Emerald;
+    }
+  }
+}
+
+.brenton {
+  .Skills {
+    .shape:after {
+      background: $Dandelion !important;
+    }
+  }
+}
+
+.brenton {
+  .Skills {
+    .shape-reverse {
+      &:after {
+        background: $White !important;
+      }
+    }
+  }
+}
